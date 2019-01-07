@@ -66,4 +66,7 @@ I should git push heroku master:
   git add .
   git commit -am hello
   git push heroku master
+
+I should see the new app:
+  curl forecast4.herokuapp.com
   
