@@ -83,3 +83,8 @@ I should create a system test:
   echo rails test:system > ~/forecast4/script/test_system.bash
   rails g system_test visit_links
   enhance ~/forecast4/test/system/visit_links_test.rb
+
+I should copy repo to github:
+  https://github.com/danbikle/forecast4
+
+

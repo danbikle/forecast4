@@ -1,0 +1,51 @@
+~/forecast4/test/product_dd.txt
+
+Tdd1.txt is the product vision for an online business.
+Jan 4, 2019 discussion Dan Bikle and Dave Devries
+
+This is a sketch - to be completed in more detail.
+
+Product definition
+Stock market movement prediction  using fundamentals for monthly macro picture (economics) and technicals (movement) for intra-hour. A finding is that accurate market movement prediction for the next hour or day is not possible using economic data, but is feasible using inter-day momentum indicators. Conversely, economic indicators are very capable of identifying macro trends leading to recessions and majpr market  movements.
+
+Vehicle - website, email subscribers. 
+Content - actionable newsletter. 
+Website design key.
+
+Copy the look and feel of the best sites
+
+Financial daily predictor and monthly predictor
+- encourage sandbox where users can gamify for the best results (Quantopian)
+
+Customer models - A, B
+A = CompSci type (200M?) partner - loyal web following like Stratechery
+B = Non academic but outcome oriented, gamify it.?
+Website UX - Gliffy and/or MS Visio drawings
+
+
+ooooooo ooooooo ooooooo ooooooo ooooooo ooooooo ooooooo ooooooo ooooooo ooooooo ooooooo ooooooo
+
+The above text is a starting point.
+
+I work with the above text to create some manual tests:
+
+We should have a file called ~/forecast4/test/product_dd.txt
+
+product_dd.txt should have some manual tests which help us define the product and some of the product-technology.
+
+Currently the product should be called forecast4.us
+
+Scripts inside forecast4.us should copy economic indicators into CSV files.
+
+forecast4.us should allow users to register and thus share their e-mail address with us.
+
+forecast4.us should allow us to send a newsletter to e-mail addresses of our users.
+
+forecast4.us should have website look and feel which seems, better than "the best sites".
+
+forecast4.us should transform economic indicators inside CSV files into daily predictions.
+
+forecast4.us should transform economic indicators inside CSV files into monthly predictions.
+
+forecast4.us UX should be specified by Gliffy and/or MS Visio drawings
+
