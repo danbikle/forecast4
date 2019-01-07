@@ -49,3 +49,13 @@ forecast4.us should transform economic indicators inside CSV files into monthly 
 
 forecast4.us UX should be specified by Gliffy and/or MS Visio drawings
 
+forecast4.us should be deployed to forecast4.herokuapp.com
+
+forecast4.us should have a repo at this URL:
+  https://github.com/danbikle/forecast4
+
+Developers of forecast4.us should learn these tasks:
+  - They should learn how to fork forecast4 repo
+  - They should learn how to enhance, commit, and push the fork 
+  - They should learn how to send pull-requests for the enhancements
+  
