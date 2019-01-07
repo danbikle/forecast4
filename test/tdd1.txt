@@ -2,6 +2,8 @@
 
 I should register forecast4.us
 
+I should redirect forecast4.us to https://forecast4.herokuapp.com
+
 I should create account on u100:
   useradd -m -s /bin/bash -G sudo forecast4
 
@@ -16,7 +18,7 @@ I should install rails 5.2.2:
   gem install rails -v 5.2.2
 
 I should rails new forecast4:
-  rails new python4 --skip-bootsnap --skip-coffee --skip-action-mailer --skip-active-record --skip-active-storage
+  rails new forecast4 --skip-bootsnap --skip-coffee --skip-action-mailer --skip-active-record --skip-active-storage
 
 I should create ~/forecast4/Procfile:
   echo 'web: bundle exec puma -C config/puma.rb' > ~/forecast4/Procfile
@@ -70,10 +72,14 @@ I should git push heroku master:
 I should see the new app:
   curl forecast4.herokuapp.com
 
-I should bundle package to speed the future deployments:
+I should bundle package to speed future deployments:
   bundle package
   git add .
   git commit -am hello
   git push heroku master
   
   
+I should create a system test:
+  echo rails test:system > ~/forecast4/script/test_system.bash
+  rails g system_test visit_links
+  enhance ~/forecast4/test/system/visit_links_test.rb
