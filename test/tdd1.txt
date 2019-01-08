@@ -87,4 +87,9 @@ I should create a system test:
 I should copy repo to github:
   https://github.com/danbikle/forecast4
 
+I should install Anaconda python, but outside of the repo.
+
+I should write script/reqp.bash which gets GSPC prices.
+
+
 
