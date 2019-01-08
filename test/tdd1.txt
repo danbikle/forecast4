@@ -91,5 +91,7 @@ I should install Anaconda python, but outside of the repo.
 
 I should write script/reqp.bash which gets GSPC prices.
 
+I should write script/calc_dips.bash which transforms a series of prices into a series of dips.
+
 
 
