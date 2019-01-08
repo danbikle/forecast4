@@ -89,4 +89,7 @@ I should copy repo to github:
 
 I should install Anaconda python, but outside of the repo.
 
+I should write script/reqp.bash which gets GSPC prices.
+
+
 
