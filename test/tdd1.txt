@@ -100,5 +100,8 @@ I should paramaterize the above test so I control the dip definition with these 
   
 I should create a script to install anaconda python.
 
+I should create a script to install Ruby 2.6.0 and Rails 5.2.2 via rbenv.
+
+I should create a script to get FRED TFAABSHNO which is related to "US Household asset movement".
 
 
