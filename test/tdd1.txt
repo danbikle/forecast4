@@ -98,5 +98,7 @@ I should define a dip to be any day which has 10 days before it which are down 5
 I should paramaterize the above test so I control the dip definition with these parameters:
   Ticker [ GSPC, IXIC maybe ], Day-duration [ currently I like 10 days ], Down-amount [ I like 5% ].
   
+I should create a script to install anaconda python.
+
 
 
