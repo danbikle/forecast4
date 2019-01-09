@@ -13,6 +13,7 @@ cd `dirname $0`
 # I should get the prices before I generate the dips:
 ./reqp.bash
 
+# I should calculate the dips:
 ~/anaconda3/bin/python calc_dips.py
 
 exit
