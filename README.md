@@ -16,6 +16,26 @@ sudo passwd forecast4
 ```
 * I logged out of the ann account.
 * I logged into the forecast4 account.
+* I made an ssh-key-pair:
+```
+ssh-keygen -t rsa
+```
+* I created an account on github.com called roomf4.
+* In the github settings I copy-pasted my public key from this file:
+```
+/home/forecast4/.ssh/id_rsa.pub
+```
+* Into the text-area for github-public-keys.
+* I used the github-web-UI to fork this repo:
+* https://github.com/danbikle/forecast4
+* The fork I created is this URL:
+* https://github.com/roomf4/forecast4
+* I cloned the fork to my local forecast4 account on my laptop:
+```
+cd ~forecast4
+git clone git@github.com:roomf4/forecast4
+```
+
 
 
 
