@@ -2,12 +2,22 @@
 
 # getfred_tfaa.bash
 
-# This script should get FRED TFAABSHNO which is related to
+# This script should get FRED TFAABSHNO data which is related to
 # "US Household asset movement".
 
 # Ref:
 # https://www.google.com/search?q=FRED+TFAABSHNO+data
 # https://fred.stlouisfed.org/series/TFAABSHNO
+
+cd ~/forecast4/script/
+
+echo I should call Python now to get fred_tfaabshno.csv
+
+~/anaconda3/bin/python getfred_tfaa.py
+
+exit
+exit
+exit
 
 cd ~/forecast4/script/csv2/
 
