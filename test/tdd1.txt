@@ -90,3 +90,6 @@ I should copy repo to github:
 I should style site to be like python4.us
   I should add favicon.ico
   I should enhance the layout
+
+I should enhance routes.rb to support /about, etc
+
