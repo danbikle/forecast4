@@ -1,0 +1,116 @@
+~/forecast4/test/tdd2.txt
+
+I should register forecast4.us
+
+I should redirect forecast4.us to https://forecast4.herokuapp.com
+
+I should create account on u100:
+  useradd -m -s /bin/bash -G sudo forecast4
+
+I should install rbenv:
+  git clone https://github.com/rbenv/rbenv.git      .rbenv
+  git clone https://github.com/rbenv/ruby-build.git .rbenv/plugins/ruby-build
+
+I should install ruby 2.6.0:
+  rbenv install 2.6.0;rbenv global 2.6.0
+
+I should install rails 5.2.2:
+  gem install rails -v 5.2.2
+
+I should rails new forecast4:
+  rails new forecast4 --skip-bootsnap --skip-coffee --skip-action-mailer --skip-active-record --skip-active-storage
+
+I should create ~/forecast4/Procfile:
+  echo 'web: bundle exec puma -C config/puma.rb' > ~/forecast4/Procfile
+
+I should add some gems to Gemfile:
+  gem 'haml'
+  gem 'haml-rails'
+  gem 'mini_racer', platforms: :ruby
+I should bundle
+  
+I should create a script to start webserver:
+  mkdir ~/forecast4/script
+  echo 'rails s -b 0.0.0.0 -p 8470' > ~/forecast4/script/railss.bash
+
+I should start the webserver:
+  bash ~/forecast4/script/railss.bash
+
+I should look for the rails-welcome page: localhost:8470
+
+I should create a home page:
+
+  cd ~/forecast4/
+  rails g controller home index
+
+I should enhance ~/forecast4/config/routes.rb
+    root 'home#index'
+
+I should install heroku-cli:
+  cd ~
+  wget https://cli-assets.heroku.com/heroku-cli/channels/stable/heroku-cli-linux-x64.tar.gz
+  tar xf heroku-cli*gz
+  mv heroku-cli-v* heroku
+
+I should enhance PATH in .bashrc:
+  echo 'export PATH=${HOME}/heroku/bin:$PATH' >> ~/.bashrc
+  bash
+
+I should create an account at heroku.com
+
+I should login to heroku
+
+I should create an app:
+  heroku create forecast4
+
+I should git push heroku master:
+  cd ~/forecast4/
+  git add .
+  git commit -am hello
+  git push heroku master
+
+I should see the new app:
+  curl forecast4.herokuapp.com
+
+I should bundle package to speed future deployments:
+  bundle package
+  git add .
+  git commit -am hello
+  git push heroku master
+  
+  
+I should create a system test:
+  echo rails test:system > ~/forecast4/script/test_system.bash
+  rails g system_test visit_links
+  enhance ~/forecast4/test/system/visit_links_test.rb
+
+I should copy repo to github:
+  https://github.com/danbikle/forecast4
+  
+I should style site to be like python4.us
+  I should add favicon.ico
+  I should enhance the layout
+
+I should enhance routes.rb to support /about, etc
+
+I should install Anaconda python, but outside of the repo.
+
+I should write script/reqp.bash which gets GSPC prices.
+
+I should write script/calc_dips.bash which transforms a series of prices into a series of dips.
+
+I should define a dip to be any day which has 10 days before it which are down 5%.
+
+I should paramaterize the above test so I control the dip definition with these parameters:
+  Ticker [ GSPC, IXIC maybe ], Day-duration [ currently I like 10 days ], Down-amount [ I like 5% ].
+  
+I should create a script to install anaconda python.
+
+I should create a script to install Ruby 2.6.0 and Rails 5.2.2 via rbenv.
+
+I should create a script to get FRED TFAABSHNO which is related to "US Household asset movement".
+
+Ref:
+https://www.google.com/search?q=FRED+TFAABSHNO+data
+
+https://fred.stlouisfed.org/series/TFAABSHNO
