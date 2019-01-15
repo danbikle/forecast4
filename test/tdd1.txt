@@ -88,5 +88,5 @@ I should copy repo to github:
   https://github.com/danbikle/forecast4
 
 I should style site to be like python4.us
-
-I should add favicon.ico
+  I should add favicon.ico
+  I should enhance the layout
