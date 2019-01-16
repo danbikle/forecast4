@@ -114,3 +114,9 @@ Ref:
 https://www.google.com/search?q=FRED+TFAABSHNO+data
 
 https://fred.stlouisfed.org/series/TFAABSHNO
+
+I should create a script to get FRED HOUST which is related to US Housing Starts:
+
+https://fred.stlouisfed.org/series/HOUST
+
+
