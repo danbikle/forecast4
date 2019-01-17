@@ -33,7 +33,7 @@ with requests.Session() as ssn:
   html_s  = fred_r.content.decode("utf-8")
   htmlf_s = 'html/fred_houst.html'
   with open(htmlf_s, 'w') as fh:
-    fh.write(htmlf_s)
+    fh.write(html_s)
     print('I should now see: ', htmlf_s)
   time.sleep(3) # I should act human
   csv_r  = ssn.get(csv_s,headers=headers_d)
